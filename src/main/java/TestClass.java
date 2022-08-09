@@ -1,8 +1,9 @@
 public class TestClass {
     public static void main(String[] args) {
-        System.out.println(Validator.checkForSequenceAlphabetCharacter("azbz",2));
-        System.out.println(Validator.checkForSequenceAlphabetCharacter("abczbz",3));
-        System.out.println(Validator.checkForSequenceAlphabetCharacter("abcdzbz", 5));
-    //  System.out.println(Validator.checkForSequenceNumber("123",3));
+        System.out.println(Validator.checkForSequenceAlphabetCharacterAllowed("abczbz",2));
+        System.out.println(Validator.checkForSequenceAlphabetCharacterAllowed("abcdzbz",1));
+        System.out.println(Validator.checkForSequenceAlphabetCharacterAllowed("ablckdzbz", 2));
+        System.out.println(ValidatorNew.checkForSequenceAlphabetCharacterAllowed("snehabclm", 2));
+        System.out.println(ValidatorNew.checkForSequenceAlphabetCharacterAllowed("snehaxyx", 2));
     }
 }
