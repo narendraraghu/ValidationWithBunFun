@@ -2,7 +2,7 @@
 
 public class ValidatorNew {
     public static boolean checkForSequenceAlphabetCharacterAllowed(String password, int numberOfAllowedSeqChar) {
-        String alphabet = "abcdefghijklmnopqrst";
+        String alphabet = "abcdefghijklmnopqrstuvwxyz";
         for (int i = 0; i < password.length() - 1; i++) {
             for (int j = numberOfAllowedSeqChar; j< password.length() - (numberOfAllowedSeqChar); j++) {
                 {
